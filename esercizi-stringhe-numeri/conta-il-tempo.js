@@ -13,3 +13,16 @@
   http://www.imparareaprogrammare.it
 */
 var time = 0;
+var input = 12560;
+var ore ;
+var min ;
+var sec ;
+var tmp;
+
+ore = parseInt(input/3600);  // tronco e trovo le orange
+tmp = input-(ore*3600);
+
+min = parseInt(tmp/60); // tronco i minuti
+sec = tmp-(min*60);
+
+console.log("Output: "+ore+ " ore, "+min+" minuti e "+sec+" secondi.");
