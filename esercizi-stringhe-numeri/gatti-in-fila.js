@@ -18,3 +18,26 @@
   http://www.imparareaprogrammare.it
 */
 // first commit
+
+
+var totale=44;
+var per_fila=6 ;
+var file ;
+var rest;
+var str_file= "Nr file: ";
+var str_manca;
+
+file = Math.ceil(totale/per_fila);
+rest = file*per_fila-totale;
+        /* test
+        console.log(file);
+        console.log(rest);
+        console.log(44/6);
+      */
+if (rest != 0){
+  str_manca ="Gatti mancanti: " + rest;
+} else{
+  str_manca = "";
+}
+console.log(str_file + file + " " + str_manca);
+console.log("Al right!");
