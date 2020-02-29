@@ -11,3 +11,18 @@
 
   http://www.imparareaprogrammare.it
 */
+var int_numero = 100;
+
+if(int_numero <= 9999 && 0 < int_numero){
+  var tmp;
+  if(int_numero<10){
+    console.log('1 cifre');}
+  else if(int_numero<100){
+      console.log('2 cifre');}
+  else if(int_numero<1000){
+    console.log('3 cifre');}
+    else{console.log('4 cifre');}
+}
+else{
+  console.log('Il numero deve essere Naturale e di max 4 cifre');
+}
