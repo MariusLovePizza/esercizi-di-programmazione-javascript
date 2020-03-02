@@ -14,3 +14,24 @@
 
   http://www.imparareaprogrammare.it
 */
+var tiri = Math.floor(Math.random()*9+1) ;
+console.log("Tiri N= "+tiri+"\n");
+
+var g1=0 ;
+var g2 = 0;
+var i = 0;
+
+while(i<tiri){
+  g1 = g1+ Math.floor(Math.random()*5+1);
+  g2 = g2+ Math.floor(Math.random()*5+1);
+
+  i++;
+}
+
+if(g1<g2){
+  console.log("Il giocatore 2 ha totalizzato più punti: "+g2 + ", mentre g1 solo: "+g1)
+}
+else if(g1>g2){
+  console.log("Il giocatore 1 ha totalizzato più punti: "+g1+ ", mentre g2 solo: "+g2);
+}
+else {console.log("Parii, è una cosa incredibile: g1 == g2 == "+ g1);}

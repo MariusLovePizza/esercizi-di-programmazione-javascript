@@ -8,3 +8,13 @@
 
   http://www.imparareaprogrammare.it
 */
+var inp = 5;
+var i = 0;
+var string = "";
+
+while(i<=50){
+  string = string + i+" ";
+  i=i+5;
+}
+
+console.log("\nOutput: "+string);
