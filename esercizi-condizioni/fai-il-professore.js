@@ -18,3 +18,35 @@
 
   http://www.imparareaprogrammare.it
 */
+// yourchoice = prompt("Choose a number between 1 and 4", "1, 2, 3 or 4")
+var voto = Math.floor(Math.random()*(30-15)+15);
+
+console.log("Voto: "+voto+"\n\n");
+
+switch (true) {
+  case (voto<18):
+    console.log("insufficiente");
+    break;
+
+  case (voto<21):
+    console.log("sufficiente");
+    break;
+
+  case voto<24:
+    console.log("buono");
+    break;
+
+  case voto<27:
+    console.log("distinto");
+     break;
+
+  case voto<30:
+   console.log("ottimo");
+    break;
+  case voto===30:
+    console.log("Eccelente");
+    break;
+
+  default: console.log("il voto inserito non è valido");
+
+}
