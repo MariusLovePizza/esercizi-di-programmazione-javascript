@@ -20,8 +20,8 @@
   http://www.imparareaprogrammare.it
 */
 var i = 0;
-var arr = [];
-var count= 10;
+var arr = [];   // array vuoto
+var count= 10;   // ogni 10  mi va a capo
 var string1 ="";
 
 console.log("Primo metodo grezzoooo");
@@ -37,8 +37,8 @@ while(i<=100){
   i++;
 }
 
-
-console.log(output);
+// secondo metodo soft
+console.log("\nSecondo metodo soft: tutto stringhe ");
 var i=0;
 count =10;
 while(i<=100){
@@ -49,5 +49,5 @@ while(i<=100){
     }
   i++
 }
-console.log("\nSecondo metodo soft: ");
+
 console.log("Output: \n\n"+string1);
