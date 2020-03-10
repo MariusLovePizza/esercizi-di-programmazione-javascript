@@ -14,7 +14,7 @@ function play(){
 }
 var s = play();
 
-console.log(play()  +":--- questa è la figata di usare javascript,\n ma come è veloce\n\n");
+console.log(play()  +":--- questa è la figata di usare javascript perchè funziona in parallelo,\n ma come è veloce\n\n");
 console.log(s);
 console.log("Adesso passiamo al secondo esempio: con var nell'if \n\n");
 
