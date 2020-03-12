@@ -26,12 +26,12 @@ var lotteria = [];
 // itero finche avro' l'array pieno, ma devo trovare il modo di farlo 10 volte senza nr uguali
 
 let x=0;
-var t =true;
+
 for(let x=0; x < 10 ;  ){
 
       let nr_estratto = Math.floor(Math.random()*89+1);  // genero nr casuale
       // let y = lotteria.length;
-      var t = lotteria.includes(nr_estratto);
+      let t = lotteria.includes(nr_estratto);
       if( t==false){
         lotteria.push(nr_estratto);
         x++;  // qui incremento il valore per il for. incremento solo quando metto un valore effettivo
@@ -65,13 +65,13 @@ nr_noi.forEach((item, i) => {
 
 // stampiamo le perdite, sappiamo come e' la probabilita' :0000000
 if(count===2){
-  console.log("2 numeri uguali => ambo : prababilita' = "+(((1/90)*(1/89))*100));
+  console.log("2 numeri uguali => ambo : prababilita' = "+ Number.parseFloat(((((1/90)*(1/89))*100))).toFixed(3)+"%");
 }
 else if(count===3){
-  console.log("3 numeri uguali => terna : prababilita' = "+(((1/90)*(1/89)*(1/87))*100));
+  console.log("3 numeri uguali => terna : prababilita' = "+Number.parseFloat((((1/90)*(1/89)*(1/87))*100)).toFixed(5)+"%");
 }
 else if(count===4){
-  console.log("4 numeri uguali => quaterna");
+  console.log("4 numeri uguali => quaterna: prababilita' = "+Number.parseFloat((((1/90)*(1/89)*(1/87)*(1/86))*100)).toFixed(7)+"%");
 }
 else if(count===5){
   console.log("5 numeri uguali => cinquina");
