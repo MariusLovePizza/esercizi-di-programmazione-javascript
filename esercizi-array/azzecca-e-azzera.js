@@ -30,7 +30,7 @@ var bool = false;
 while(!bool){
 //
       console.log("Inserisci un nr per eliminare i multipli");
-      let input = prompt("Metti un numero intero");
+      let input = prompt("Metti un numero intero");             // esce un pop up. con il messaggio, [ figo cmq]
       console.log(input);
       //
       //
