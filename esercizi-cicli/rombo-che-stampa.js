@@ -56,6 +56,7 @@ for(var i=1; i<=(tab+1) ; i++){
         ///    Parte superiore fatta   /
 
 // Inizia la parte inf ://
+//
 let meno2X=1;  // mi serve per le X che devono aumentare di 2
 
 for(let i_inf = 1; i_inf<= tab; i_inf++){   // defe fare due cicli, rimaste 2 righe

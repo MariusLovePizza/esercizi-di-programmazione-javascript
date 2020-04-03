@@ -20,43 +20,43 @@
   http://www.imparareaprogrammare.it
 */
 // costrutiamo la lotteria
-var lotteria = [];
+let lotteria = [];
 // array per la lotteria
 
 // itero finche avro' l'array pieno, ma devo trovare il modo di farlo 10 volte senza nr uguali
-
 let x=0;
 
-for(let x=0; x < 10 ;  ){
+for(let x=0; x < 10 ;  ){ // ho tolto x+= 1 da qui per aumentare solo in modo effettivo
 
       let nr_estratto = Math.floor(Math.random()*89+1);  // genero nr casuale
       // let y = lotteria.length;
-      let t = lotteria.includes(nr_estratto);
+      let t = lotteria.includes(nr_estratto); // includes mi restituisce: vero o falso
       if( t==false){
         lotteria.push(nr_estratto);
-        x++;  // qui incremento il valore per il for. incremento solo quando metto un valore effettivo
+        x+=1;  // qui incremento il valore per il for. incremento solo quando metto un valore effettivo
       }
 }
 // riprova:
-console.log("Sono uscito dal while, iterazione:" + x);
+console.log(`Sono uscito dal for, iterazione: ${x}`);
 console.log(lotteria);
 
-// costruiamo l'array con i 10 numeri "scelti da noi"
-var nr_noi = [];
-var bool = true; // booleano per il controllo if se esiste il numero o no;
+
+// costruiamo l'array con i 10 numeri "scelti da noi" per giocare a tombola
+let nr_noi = [];
+let bool = true; // booleano per il controllo if se esiste il numero o no;
 
 for(let n=0; n<10; ){  // anche in questo caso vogliamo un array di 10 numeri senza ripetizioni
       let num = Math.floor(Math.random()*89+1);
       bool = nr_noi.includes(num);
       if(bool== false){
-            nr_noi.push(num);
-            n++;
+            nr_noi.push(num); // aggiungo un numero diverso dai numeri gia' presenti
+            n+=1 ;
       }
 }
-console.log(nr_noi);
+console.log(`Numeri scelti: ${nr_noi}`);
 
 // adesso costruiamo il codice per veder quanti numeri abbiamo azzeccati
-var count=0;
+let count=0;
 nr_noi.forEach((item, i) => {
         if(lotteria.includes(i)){
               count++;
